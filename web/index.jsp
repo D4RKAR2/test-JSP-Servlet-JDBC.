@@ -13,25 +13,134 @@
 %>
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header"> 
+        <div class="container">
+            <h1 class="title">Empresa de acueducto rural</h1>
+            <button class="main-btnlogin">Iniciar sesión</button>
+            <img src="img/EmpresaLogo.jpeg" alt="Logo de la empresa" class="logo" id="logo-inicio">
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a id="link-solicitud" href="#solicitud"><i class="fas fa-file-alt"></i>Solicitud de Servicios</a></li>
+                <li><a href="#atencion"><i class="fas fa-headset"></i>Atención al cliente</a></li>
+                <li><a href="#factura"><i class="fas fa-file-invoice"></i>Factura Virtual</a></li>
+            </ul>
+            <ul class="nav-list">
+                <li><a href="#pagos"><i class="fas fa-credit-card"></i>Puntos y formas de pago</a></li>
+                <li><a href="#cortes"><i class="fas fa-calendar-alt"></i>Programación de cortes</a></li>
+                <li><a href="#acceso"><i class="fas fa-unlock-alt"></i>Transparencia y acceso</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <div class = "login-container">
+    <!-- Contenedor sitio principal de la web -->
+    <div class="main-container">
+        <div class="main-text">
+            <h2>¡BIENVENIDOS!</h2>
+            <p class="parrafo-mision">Nuestra Misión es proveer agua potable segura y de calidad, promoviendo el desarrollo y el bienestar de nuestra comunidad rural.</p>
+            <p class="parrafo-frase">CUIDAR EL AGUA ES ASEGURAR LA VIDA</p>
+        </div>
+        <img src="img/imagen reemplazada.jpg" alt="Imagen de fondo" class="background-image">
+
+        <!-- Información como captaciones, plantas de tratamiento, etc. -->
+        <div class="main-info">
+            <div class="info-item">
+                <img src="img/capatacion.jpg" alt="captaciones">
+                <h3>Captaciones</h3>
+            </div>
+            <div class="info-item">
+                <img src="img/planta.jpg" alt="planta de tratamiento">
+                <h3>Plantas de Tratamiento</h3>
+            </div>
+            <div class="info-item">
+                <img src="img/redes.jpeg" alt="redes de distribución">
+                <h3>Redes de Distribución</h3>
+            </div>
+            <div class="info-item">
+                <img src="img/comunidad.jpeg" alt="comunidad"> 
+                <h3>Trabajamos con la comunidad</h3>
+            </div>
+        </div>
+
+        <!-- Contenedor de noticias -->
+        <div class="news-container">
+            <div class="noticia-imagen-izq">
+                <img src="img/fhidr.webp" alt="noticias">
+            </div>
+
+            <div class="noticia-texto-der">
+                <h3>Noticias informativas a la comunidad</h3>
+                <ul>
+                    <li>Cortes programados para las fechas de 1 de abril del 2025 por mantenimiento por alta turbiedad por las lluvias.</li>
+                    <li>No olvide que en la empresa se ofrecen de aseo y lavado de pozos sépticos.</li>
+                    <li>Acuerdate que estar en mes de mora llevará a la suspensión del servicio.</li>
+                </ul>
+            </div>
+
+            <div class="noticia-texto-izq">
+                <h3>¿Quieres pertenecer a nuestra comunidad?</h3>
+                <ul>
+                    <p>¿Sabes cuáles son los requisitos?</p>
+                    <li>Debes hacer una viabilidad de tus servicios.</li>
+                    <li>Pregunta que documentos se necesitan.</li>
+                    <li>El trámite se desarrolla en tan solo 15 días hábiles.</li>
+                    <p>No te quedes con las ganas de obtener un servicio de calidad y eficiente.</p>
+                </ul>
+            </div>
+            
+            <div class="noticia-imagen-der">
+                <img src="img/manos agua.jpg" alt="noticias">
+            </div>
+        </div>
+
+        <!-- Footer de la página web -->
+        <div class="footer">
+            <div class="footer-header">
+                <h3>ACUEDUCTO RURAL</h3>
+                <img src="img/EmpresaLogo.jpeg" alt="Logo de la empresa" class="logo-footer">
+            </div>
+        
+            <div class="footer-divider"></div>
+        
+            <div class="footer-body">
+                <div class="footer-info">
+                    <p>Dirección: Centro de Experiencia Avenida Las Palmas #4-66 - Fusagasugá, Cundinamarca</p>
+                    <p>Horario de atención: lunes a viernes de 8AM a 12 y 2PM a 5PM</p>
+                    <p>Teléfono Conmutador: 60568225</p>
+                    <p>Correo institucional: acueductorural@gmail.com</p>
+                </div>
+                <div class="chat-bubble">
+                    <span>CHAT</span>
+                    <span>Asistente virtual</span>
+                </div>
+            </div>
+        
+            <div class="footer-links">
+                <span class="clickeable-text">Políticas</span>
+                <span class="clickeable-text">Mapa del sitio</span>
+                <span class="clickeable-text">Estadísticas</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor o formulario de inicio de sesión -->
+    <div class="login-container">
         <button class="btn-volver" onclick="showMainContainer()"> ← Volver al Inicio</button>
         <h1 class="form-title">Iniciar Sesión</h1>
         <form action="LoginServlet" method="POST">
-            <div class = "form-field">
-                <!-- Crea una etiqueta donde se usa el atributo for y se conecta con id,
-                 cuando se hace click en "Usuario", el cursor se posiciona en el 
-                 campo para digitar texto. Aparte, el atributo type ayuda a definir qué
-                 tipo de datos aceptará el campo-->
-                <label for = "user-role"></label>
-                <select id = "user-role" name="tipoDocumento" required><!-- El atributo required indica que el campo es obligatorio -->
-                    <option value="" disabled selected> Tipo de documento</option>
+            <div class="form-field">
+                <label for="user-role"></label>
+                <select id="user-role" name="tipoDocumento" required>
+                    <option value="" disabled selected>Tipo de documento</option>
                     <option value="CC">Cédula de Ciudadanía</option>
                     <option value="TI">Tarjeta de Identidad</option>
                     <option value="CE">Cédula de Extranjería</option>
@@ -39,13 +148,13 @@
             </div>
 
             <div class="form-group">
-                <label for="username"> </label>
+                <label for="username"></label>
                 <input type="number" id="username" name="numeroDocumento" placeholder="Número de documento" required minlength="5" maxlength="20"
                 pattern="[0-9]+" title="El número de documento debe contener solo números.">
             </div>
 
-            <div class = "form-group">
-                <label for="password"> </label>
+            <div class="form-group">
+                <label for="password"></label>
                 <input type="password" id="password" name="clave" placeholder="Contraseña" required minlength="6">
             </div>
 
@@ -53,20 +162,84 @@
                 <p>¿Has olvidado la contraseña?</p>
             </div>
 
-             <button class="button" type="submit">
-                <span class="icon">⮞&nbsp;</span>  Iniciar sesión
+            <button class="button" type="submit">
+                <span class="icon">⮞&nbsp;</span>Iniciar sesión
             </button>
-
             
-                <p class="register-text">Registrar usuario nuevo</p>
+            <p class="register-text">Registrar usuario nuevo</p>
         </form>
 
         <div class="register-button">
-           
             <a href="registro.jsp">Registrar</a>
+        </div>
+    </div>
+
+    <!-- Contenedor de los servicios -->
+    <section id="solicitud" style="display: none;" class="servicios">
+        <button class="btn-volver" onclick="showMainContainer()"> ← Volver al Inicio</button>
+        <h2 class="form-title">Solicitud de Servicios</h2>
+
+        <button class="button-servicios" id="btn-agua-potable" type="button">
+            Agua potable
+        </button>
+
+        <button class="button-servicios" id="btn-expansión-acueducto" type="button">
+            Expansión de acueducto
+        </button>
+
+        <button class="button-servicios" id="btn-mantenimiento-redes" type="button">
+            Mantenimiento de redes
+        </button>
+    </section>
+
+    <!-- Sección formulario de solicitud de servicio -->
+    <form style="display: none;" id="formulario" action="SolicitudServlet" method="POST">
+        <section id="agua-potable" class="form-section">
+            <button class="btn-volver" onclick="showMainContainer()"> ← Volver al Inicio</button>
+            <h3 class="form-title">Formulario de solicitud de Servicio</h3>
             
-        </div>
-        </div>
-        
-    </body>
+            <div class="información">
+                <div class="form-group">
+                    <label for="nombreCompleto">Nombres y apellidos completos</label>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Digite sus nombres y apellidos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Digite dirección de hogar" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoVivienda">Tipo de vivienda</label>
+                    <input type="text" id="tipoVivienda" name="tipoVivienda" placeholder="El tipo de vivienda" required>
+                </div>
+            </div>
+
+            <!-- Sección de lista de chequeo -->
+            <div class="document-list">
+                <label class="list-verification">
+                    Licencia de construcción <input class="check" name="licenciaConstruccion" type="checkbox">
+                </label>
+            </div>
+
+            <div class="document-list">
+                <label class="list-verification">
+                    Impuesto predial <input class="check" name="impuestoPredial" type="checkbox">
+                </label>
+            </div>
+
+            <div class="document-list">
+                <label class="list-verification">
+                    Certificado de tradición <input class="check" name="certificadoTradicion" type="checkbox">
+                </label>
+            </div>
+
+            <button class="button button2" type="submit">
+                Enviar formulario
+            </button>
+        </section>
+    </form>
+
+    <script src="JavaScript.js"></script>
+</body>
 </html>
