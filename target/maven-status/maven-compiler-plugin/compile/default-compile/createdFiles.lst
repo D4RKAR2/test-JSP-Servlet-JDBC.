@@ -1,0 +1,14 @@
+model\SolicitudServicio.class
+servlets\MensajeService.class
+servlets\LoginServlet.class
+servlets\RegisterServlet.class
+pruebaproyectomysql\PruebaProyectoMySQL.class
+com\mycompany\acueductmaven\resources\JakartaEE8Resource.class
+pruebaproyectomysql\crud.class
+util\HibernateUtil.class
+com\mycompany\acueductmaven\JakartaRestConfiguration.class
+dao\SolicitudServicioDAO.class
+dao\UsuarioDAO.class
+servlets\TestServlet.class
+servlets\SolicitudServicioServlet.class
+pruebaproyectomysql\dbConnection.class

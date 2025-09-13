@@ -1,0 +1,599 @@
+body {
+    font-family: 'Roboto', sans-serif; /* se modifica el tipo de fuente */
+    margin: 0;
+}
+
+.title {
+    text-align: left;
+    color: white;
+    margin: 0;
+}
+
+.title.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
+    border-bottom: 3px solid black;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0 50px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 220px;
+    height: 200px;
+    padding: 0 100px;
+}
+
+.main-btnlogin {
+    padding: 8px 15px;
+    background: #2b78e4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-left: auto;
+    align-self: center;
+}
+
+.main-btnlogin:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.nav-list li a {
+    display: inline-block;
+    background-color: #2b78e4;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: transforms 0.2s ease, box-shadow 0.2s ease;
+    font-size: 14px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.nav-list li a i {
+    margin-right: 7px;
+}
+
+.nav-list li a:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.login-container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    width: 400px; /* Ancho del cuadro */
+    margin: 100px auto; /* Centra el cuadro horizontalmente y da espacio arriba */
+    padding: 30px; /* Espacio interno entre el contenido y el borde */
+    border: 3px solid #000; /* Borde del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    background-color: #fff; /* Fondo blanco */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+.login-container .form-title {
+    text-align: center; /* Centra el texto del título */
+    font-size: 25px; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color:#2b78e4; /* Color del texto del título */
+}
+
+.form-group, .form-field {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: left; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea los elementos al centro */
+    margin: 10px 0; /* Espacio entre las etiquetas de formulario */
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 4px; /* Espacio interno entre el contenido y el borde */
+}
+
+.button {
+    background-color: #2b78e4; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+
+    /*No noto diferencia al poner el cursor en el botón, pero igual dejo
+    el diseño o bloque de código, por si acaso*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    padding: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del botón al pasar el mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+}
+
+input, select {
+    border-radius: 10px; /* Bordes redondeados */
+    border-color: #000;
+    padding: 4px 12px; /* Espacio interno entre el contenido y el borde */
+    width: 71%; /* Ancho del input */
+}
+
+select {
+    font-family: inherit; /* Usar la misma fuente que el resto del formulario */
+    font-size: inherit; /* Mismo tamaño de fuente */
+    padding: 2px 12px; /* Ajustar según necesites para que coincida */
+    border: 2px solid #000; /* Borde similar a otros inputs */
+    border-radius: 10px; /* Bordes redondeados si los otros los tienen */
+    width: 80%; /* O el ancho que necesites */
+    background-color: white; /* Fondo blanco como otros inputs */
+}
+
+.register-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.register-button a {
+    text-decoration: none;;
+    background-color: rgb(88, 84, 84); /* Fondo gris */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 6px 20px; /* Espacio interno */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    text-align: center; /* Centra el texto dentro del botón */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave */
+}
+
+.register-button button:hover {
+    background-color: gray; /* Cambia el fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+}
+
+.button {
+    display: flex;
+    margin-left: auto;
+}
+
+.register-button {
+    margin: -10px;
+}
+
+.register-text, .register-button {
+    text-align: center;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 2px;
+    vertical-align: top;
+}
+
+@media (max-width: 750px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .title {
+        font: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .nav-list li a i {
+        display: flex;
+        margin-right: 8px;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.clickeable {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.servicios {
+    display: flex;
+    width: 400px;
+    margin: 100px auto;
+    padding: none;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.form-title {
+    text-align: center; /* Centra el texto del título */
+    font-size: 25px; /* Tamaño de fuente del título */
+    color:#2b78e4; /* Color del texto del título */
+    border-bottom: 3px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.button-servicios {
+    display: flex;
+    margin: 20px auto;
+    background-color: #2b78e4; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: 2px solid black; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    padding: 6px;
+    font-weight: bold;
+    width: 210px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-servicios:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del botón al pasar el mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+}
+
+
+.form-section {
+    display: flex; /* Utiliza flexbox para el diseño */
+    width: 400px; /* Ancho del cuadro */
+    margin: 100px auto; /* Centra el cuadro horizontalmente y da espacio arriba */
+    padding: 30px; /* Espacio interno entre el contenido y el borde */
+    border: 3px solid #000; /* Borde del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    background-color: #fff; /* Fondo blanco */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#información {
+    padding: 21px;
+
+}
+
+.list-verification {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.check {
+    margin: 3px;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+}
+
+.button2 {
+    padding: 20px;
+    border: solid 2px black;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Altura fija para reservar espacio */
+    margin-bottom: 50px; /* Separación adicional */
+}
+
+.main-text {
+    position: absolute;
+    color: white;
+    left: 50%;
+    margin: 50px;
+}
+
+.background-image {
+    width: 100%;
+}
+
+.main-text .parrafo-mision {
+    margin-bottom: 30px;
+}
+
+.main-text .parrafo-frase {
+    margin-top: 600px;
+}
+
+.login-container, .servicios, .form-section {
+    position: relative; /* Importante para el posicionamiento */
+}
+
+.btn-volver {
+    position: absolute;
+    top: -50px; /* Lo coloca arriba del cuadro */
+    left: 0;
+    background-color: #000000;
+    color: #e9e9e9;
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/*.btn-volver {
+    position: absolute;
+    left: 590px;
+}*/
+
+.main-info {
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly; /* Distribuye con espacios iguales */
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden; /* Controla el desbordamiento */
+}
+
+.info-item {
+    position: relative;
+    width: 300px;
+    height: 260px;
+    margin: 0; /* Sin márgenes irregulares */
+    overflow: hidden; /* Importante: controla el desbordamiento de la imagen */
+    border-radius: 8px; /* Opcional: para bordes limpios */
+}
+
+.info-item img {
+    width: 150%; /* Mantienes tu 150% */
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    /* Centramos la imagen dentro del contenedor */
+    margin-left: -25%; /* Esto centra la imagen desbordada: (150% - 100%) / 2 = 25% */
+}
+
+.info-item h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+/* Media queries básicos */
+@media (max-width: 768px) {
+    .main-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .info-item {
+        width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-item {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+.news-container {
+    display: grid;
+    background-color: #000;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1800px; /* ← Usar WIDTH en lugar de max-width */
+    height: 1200px; /* ← Altura que quieras */
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    gap: 0; /* ← Asegúrate de tener esto */
+}
+
+.noticia-texto-der {
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+    flex-direction: column;
+}
+
+
+.noticia-texto-izq {
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+    flex-direction: column;
+}
+
+.noticia-imagen-der {
+ display: block;
+}
+
+.noiticia-imagen-der img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.noticia-imagen-izq {
+    display: flex;
+    flex: 1;
+
+}
+
+.noticia-imagen-der img,
+.noticia-imagen-izq img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer {
+    background-color: #000;
+    color: #ccc; /* Light gray for text */
+    padding: 30px 50px;
+    font-family: Arial, sans-serif; /* A common sans-serif font */
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.logo-footer {
+    width: 90px;
+    height: auto;
+    border-radius: 0;
+    object-fit: initial;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: #444; /* Dark gray line */
+    margin: 15px 0;
+    border: none;
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-info {
+    flex-grow: 1; /* Allows it to take available space */
+}
+
+.footer-info p {
+    margin: 8px 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.chat-bubble {
+    width: 130px;
+    height: 130px;
+    background-color: #d93025; /* A standard red color */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    flex-shrink: 0; /* Prevents the bubble from shrinking */
+}
+
+.chat-bubble span:first-child {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.chat-bubble span:last-child {
+    font-size: 0.8em;
+    line-height: 1;
+}
+
+.footer-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+.clickeable-text {
+    color: #ccc;
+    text-decoration: underline;
+    font-size: 0.9em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.clickeable-text:hover {
+    color: #fff;
+}
