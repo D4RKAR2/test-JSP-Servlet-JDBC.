@@ -1,0 +1,55 @@
+# ===== JAVA/MAVEN =====
+target/
+*.class
+*.jar
+*.war
+*.ear
+dependency-reduced-pom.xml
+
+# ===== NETBEANS =====
+nb-configuration.xml
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ===== NODE.JS (microservicio) =====
+microservice-facturacion/node_modules/
+microservice-facturacion/npm-debug.log*
+microservice-facturacion/yarn-debug.log*
+microservice-facturacion/yarn-error.log*
+microservice-facturacion/.env
+
+# ===== ARCHIVOS DEL SISTEMA =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ===== LOGS =====
+*.log
+logs/
+
+# ===== TEMPORALES =====
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ===== ESPECÍFICO DEL PROYECTO =====
+# Mantener solo archivos fuente, no compilados
+web/WEB-INF/classes/
+web/WEB-INF/lib/

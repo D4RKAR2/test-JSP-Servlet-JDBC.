@@ -1,0 +1,12 @@
+{
+    "name": "facturacion-acueducto-rural",
+    "version": "1.0.0",
+    "description": "facturacion para el usuario, que refleje costo y medio de pago",
+    "main": "server.js",
+
+    "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+    }
+}
