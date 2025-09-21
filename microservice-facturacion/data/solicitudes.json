@@ -1,0 +1,153 @@
+[
+  {
+    "id": "Sol-1758409640570",
+    "fechaCreacion": "2025-09-20T23:07:20.570Z",
+    "estado": "pendiente",
+    "nombreCompleto": "elpepe",
+    "numeroDocumento": "1234",
+    "telefonoContacto": "97234",
+    "direccion": "calle 123",
+    "distanciaRed": "16",
+    "impuestoPredial": "on",
+    "planoTopografico": "on",
+    "numeroViviendas": "",
+    "tipoTerreno": "",
+    "diametroTuberia": "",
+    "longitudRed": ""
+  },
+  {
+    "id": "Sol-1758411303198",
+    "fechaCreacion": "2025-09-20T23:35:03.198Z",
+    "estado": "pendiente",
+    "nombreCompleto": "elpepe",
+    "numeroDocumento": "1234",
+    "telefonoContacto": "97234",
+    "direccion": "calle 123",
+    "distanciaRed": "16",
+    "certificadoTradicion": "on",
+    "numeroViviendas": "",
+    "tipoTerreno": "",
+    "diametroTuberia": "",
+    "longitudRed": ""
+  },
+  {
+    "id": "Sol-1758411541729",
+    "fechaCreacion": "2025-09-20T23:39:01.729Z",
+    "estado": "pendiente",
+    "nombreCompleto": "elpepe",
+    "numeroDocumento": "1234",
+    "telefonoContacto": "97234",
+    "direccion": "calle 123",
+    "distanciaRed": "16",
+    "autorizacionServidumbre": "on",
+    "numeroViviendas": "",
+    "tipoTerreno": "",
+    "diametroTuberia": "",
+    "longitudRed": ""
+  },
+  {
+    "id": "Sol-1758412624825",
+    "fechaCreacion": "2025-09-20T23:57:04.825Z",
+    "estado": "pendiente",
+    "nombreCompleto": "elpepe",
+    "numeroDocumento": "1234",
+    "telefonoContacto": "97234",
+    "direccion": "calle 123",
+    "distanciaRed": "16",
+    "certificadoTradicion": "on",
+    "planoTopografico": "on",
+    "numeroViviendas": "",
+    "tipoTerreno": "",
+    "diametroTuberia": "",
+    "longitudRed": "",
+    "documentos": {
+      "certificadoTradicion": "Sí",
+      "impuestoPredial": "No",
+      "planoTopografico": "Sí",
+      "autorizacionServidumbre": "No"
+    }
+  },
+  {
+    "id": "Sol-1758413335517",
+    "fechaCreacion": "2025-09-21T00:08:55.517Z",
+    "estado": "pendiente",
+    "nombreCompleto": "elpepe",
+    "numeroDocumento": "1234",
+    "telefonoContacto": "97234",
+    "direccion": "calle 123",
+    "distanciaRed": "16",
+    "certificadoTradicion": "on",
+    "numeroViviendas": "",
+    "tipoTerreno": "",
+    "diametroTuberia": "",
+    "longitudRed": "",
+    "documentos": {
+      "certificadoTradicion": "Sí",
+      "impuestoPredial": "No",
+      "planoTopografico": "No",
+      "autorizacionServidumbre": "No"
+    }
+  },
+  {
+    "id": "Sol-1758413393221",
+    "fechaCreacion": "2025-09-21T00:09:53.221Z",
+    "estado": "pendiente",
+    "nombreCompleto": "elpepe",
+    "numeroDocumento": "1234",
+    "telefonoContacto": "97234",
+    "direccion": "calle 123",
+    "distanciaRed": "16",
+    "certificadoTradicion": "on",
+    "numeroViviendas": "",
+    "tipoTerreno": "",
+    "diametroTuberia": "",
+    "longitudRed": "",
+    "documentos": {
+      "certificadoTradicion": "Sí",
+      "impuestoPredial": "No",
+      "planoTopografico": "No",
+      "autorizacionServidumbre": "No"
+    }
+  },
+  {
+    "id": "Sol-1758413444874",
+    "fechaCreacion": "2025-09-21T00:10:44.874Z",
+    "estado": "pendiente",
+    "nombreCompleto": "elpepe",
+    "numeroDocumento": "1234",
+    "telefonoContacto": "97234",
+    "direccion": "calle 123",
+    "distanciaRed": "16",
+    "certificadoTradicion": "on",
+    "numeroViviendas": "",
+    "tipoTerreno": "",
+    "diametroTuberia": "",
+    "longitudRed": "",
+    "documentos": {
+      "certificadoTradicion": "Sí",
+      "impuestoPredial": "No",
+      "planoTopografico": "No",
+      "autorizacionServidumbre": "No"
+    }
+  },
+  {
+    "id": "Sol-1758415468449",
+    "fechaCreacion": "2025-09-21T00:44:28.449Z",
+    "estado": "pendiente",
+    "nombreCompleto": "elpepe",
+    "numeroDocumento": "1234",
+    "telefonoContacto": "97234",
+    "direccion": "calle 123",
+    "distanciaRed": "16",
+    "numeroViviendas": "",
+    "tipoTerreno": "",
+    "diametroTuberia": "",
+    "longitudRed": "",
+    "documentos": {
+      "certificadoTradicion": "No",
+      "impuestoPredial": "No",
+      "planoTopografico": "No",
+      "autorizacionServidumbre": "Sí"
+    }
+  }
+]

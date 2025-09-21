@@ -238,6 +238,8 @@ select {
 .button {
     display: flex;
     margin-left: auto;
+    padding: 20px;
+    border: solid 2px black;
 }
 
 .register-button {

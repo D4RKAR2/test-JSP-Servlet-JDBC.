@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : Jul 10, 2025, 9:00:02 AM
+    Created on : Jul 10, 2025, 9:00:02 AM
     Author     : Sebitas webitas
 --%>
 
@@ -84,8 +84,7 @@
             </div>
         </div>
         
-        <!-- Footer de la página web -->
-
+    <!-- Footer de la página web -->
   <%@ include file="footer.jsp" %>
 
     <!-- Contenedor o formulario de inicio de sesión -->
@@ -121,7 +120,7 @@
             <button class="button" type="submit">
                 <span class="icon">⮞&nbsp;</span>Iniciar sesión
             </button>
-            
+
             <p class="register-text">Registrar usuario nuevo</p>
         </form>
 
@@ -148,12 +147,12 @@
         </button>
     </section>
 
-    <!-- Sección formulario de solicitud de servicio -->
+    <!-- Sección formulario de solicitud de servicio -->x
     <form style="display: none;" id="formulario" action="SolicitudServicioServlet" method="POST">
         <section id="agua-potable" class="form-section">
             <button class="btn-volver" onclick="showMainContainer()"> ← Volver al Inicio</button>
             <h3 class="form-title">Formulario de solicitud de Servicio</h3>
-            
+                
             <div class="información">
                 <div class="form-group">
                     <label for="nombreCompleto">Nombres y apellidos completos</label>
@@ -195,6 +194,103 @@
             </button>
         </section>
     </form>
+
+<!-- Formulario de expansión de acueducto -->
+<form style="display: none;" id="formularioExpansion" action="http://localhost:3000/api/solicitudes" method="POST">
+    <section id="expansion-acueducto" class="form-section">
+        <button class="btn-volver" onclick="showMainContainer()"> ← Volver al Inicio</button>
+        <h3 class="form-title">Formulario de Expansión de Acueducto</h3>
+
+    <!-- Informacion obligatoria -->
+
+<div class="form-section-header">
+    <h4 class="section-title required">Información Obligatoria</h4>
+    <div class="section-divider"></div>
+</div>
+     
+     <!-- ////////// -->
+
+        <div class="información">
+            <div class="form-group">
+                <label for="nombreCompletoExp">Nombres y apellidos completos</label>
+                <input type="text" id="nombreCompletoExp" name="nombreCompleto" placeholder="Digite sus nombres y apellidos" required>
+            </div>
+
+            <div class="form-group">
+                <label for="numeroDocumentoExp">Número de documento</label>
+                <input type="text" id="numeroDocumentoExp" name="numeroDocumento" placeholder="Número de documento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefonoContactoExp">Teléfono de contacto</label>
+                <input type="text" id="telefonoContactoExp" name="telefonoContacto" placeholder="Número para contactar" required>
+            </div>
+
+            <div class="form-group">
+                <label for="direccionExp">Dirección donde se requiere expansión</label>
+                <input type="text" id="direccionExp" name="direccion" placeholder="Dirección donde necesita el servicio" required>
+            </div>
+
+            <div class="form-group">
+                <label for="distanciaRed">Distancia aproximada a red existente (metros)</label>
+                <input type="number" id="distanciaRed" name="distanciaRed" placeholder="Distancia en metros" required>
+            </div>
+        </div>
+
+        <!-- Sección de lista de chequeo -->
+        <div class="document-list">
+            <label class="list-verification">
+                Certificado de tradición y libertad <input class="check" name="certificadoTradicion" type="checkbox">
+            </label>
+        </div>
+
+        <div class="document-list">
+            <label class="list-verification">
+                Impuesto predial al día <input class="check" name="impuestoPredial" type="checkbox">
+            </label>
+        </div>
+
+        <div class="document-list">
+            <label class="list-verification">
+                Plano topográfico del terreno <input class="check" name="planoTopografico" type="checkbox">
+            </label>
+        </div>
+
+        <div class="document-list">
+            <label class="list-verification">
+                Autorización de servidumbre <input class="check" name="autorizacionServidumbre" type="checkbox">
+            </label>
+        </div>
+
+        <!-- Detalles técnicos opcionales -->
+         <div style= "color: #2b78e4; margin: 8px"> 
+            <label class="separadorForm">Información adicional (opcional)</label>
+         </div>
+        <div class="form-group" style="margin: 8px">
+            <label for="numeroViviendas">Número de viviendas a conectar</label>
+            <input type="number" id="numeroViviendas" name="numeroViviendas" placeholder="¿Cuántas casas se conectarán?">
+        </div>
+
+        <div class="form-group" style="margin: 8px">
+            <label class="tipoTerreno">Tipo de terreno(plano, montañoso, rocoso)</label>
+            <input type="text" id="tipoTerreno" name="tipoTerreno" placeholder="El tipo de terreno donde se expanse">
+        </div>
+
+        <div class="form-group" style="margin: 8px">
+            <label class="diametroTuberia">Diámetro de tubería</label>
+            <input type="diametroTuberia" id="diametroTuberia" name="diametroTuberia" placeholder="Diámetro de tubería requerido">
+        </div>
+
+        <div class="form-group" style="margin: 8px; margin-bottom: 30px">
+            <label class="longitudRed">Longitud de red nueva (metros)</label>
+            <input type="longitudRed" id="longitudRed" name="longitudRed" placeholder="Longitud aproximada de red nueva en metros">
+        </div>
+
+        <button class="button button2" type="submit">
+            Enviar solicitud de expansión
+        </button>
+    </section>
+</form>
 
     <script src="JavaScript.js"></script>
 </body>

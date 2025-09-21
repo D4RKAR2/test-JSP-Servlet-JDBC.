@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Función para mostrar/ocultar secciones
     function showSection(sectionID) {
         // Oculta el login-container
         const loginContainer = document.querySelector('.login-container');
         if (loginContainer) loginContainer.style.display = 'none';
-        
+
         // Oculta la sección de servicios
         const servicios = document.getElementById('solicitud');
         if (servicios) servicios.style.display = 'none';
-        
+
         // Oculta el formulario
         const formulario = document.getElementById('formulario');
         if (formulario) formulario.style.display = 'none';
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Oculta el contenedor principal
         const mainContainer = document.querySelector('.main-container');
         if (mainContainer) mainContainer.style.display = 'none';
-        
+
         // Muestra la sección solicitada
         const section = document.getElementById(sectionID);
         if (section) section.style.display = 'block';
@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Oculta todas las otras secciones
         const servicios = document.getElementById('solicitud');
         if (servicios) servicios.style.display = 'none';
-        
+
         const formulario = document.getElementById('formulario');
         if (formulario) formulario.style.display = 'none';
-        
+
         // Muestra/oculta el login container
         const loginContainer = document.querySelector('.login-container');
         if (loginContainer) {
@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const mainContainer = document.querySelector('.main-container');
         if (mainContainer) mainContainer.style.display = 'none';
-        }
+    }
 
     // Eventos para el menú de navegación
     document.querySelectorAll('.nav-list a').forEach(link => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
             event.preventDefault();
             const sectionID = this.getAttribute('href').substring(1);
             showSection(sectionID);
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // NUEVO: Evento para el botón de login principal
     const mainLoginBtn = document.querySelector('.main-btnlogin');
     if (mainLoginBtn) {
-        mainLoginBtn.addEventListener('click', function(event) {
+        mainLoginBtn.addEventListener('click', function (event) {
             event.preventDefault();
             showLogin();
         });
@@ -67,13 +67,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Evento para el botón de agua potable
     const btnAgua = document.getElementById('btn-agua-potable');
     if (btnAgua) {
-        btnAgua.addEventListener('click', function() {
-            // Oculta lo que no necesitas
+        btnAgua.addEventListener('click', function () {
+            // Oculta lo que no necesita
             document.querySelector('.login-container').style.display = 'none';
             document.getElementById('solicitud').style.display = 'none';
-            
+
             // Muestra el formulario
             document.getElementById('formulario').style.display = 'block';
+        });
+    }
+
+    // Evento para el boton de expansion acueducto
+    const btnExpansion = document.getElementById('btn-expansión-acueducto');
+    if (btnExpansion) {
+        btnExpansion.addEventListener('click', function () {
+            // Oculta lo que no se necesita
+            document.querySelector('.login-container').style.display = 'none';
+            document.getElementById('solicitud').style.display = 'none';
+            document.getElementById('formulario').style.display = 'none';
+
+            // Debe de mostrarse el formulario de expansion
+            document.getElementById('formularioExpansion').style.display = 'block';
         });
     }
 
@@ -88,10 +102,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Oculta todas las secciones
         const loginContainer = document.querySelector('.login-container');
         if (loginContainer) loginContainer.style.display = 'none';
-        
+
         const servicios = document.getElementById('solicitud');
         if (servicios) servicios.style.display = 'none';
-        
+
         const formulario = document.getElementById('formulario');
         if (formulario) formulario.style.display = 'none';
 
@@ -101,20 +115,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Evento para el logo clickeable
-const logoInicio = document.getElementById('logo-inicio');
-if (logoInicio) {
-    logoInicio.addEventListener('click', function() {
-        showMainContainer();
-    });
-    // Cambiar cursor para indicar que es clickeable
-    logoInicio.style.cursor = 'pointer';
-}
+    const logoInicio = document.getElementById('logo-inicio');
+    if (logoInicio) {
+        logoInicio.addEventListener('click', function () {
+            showMainContainer();
+        });
+        // Cambiar cursor para indicar que es clickeable
+        logoInicio.style.cursor = 'pointer';
+    }
 
-// Evento para el botón de volver al inicio en toda la página
-document.querySelectorAll('.btn-volver').forEach(button => {
-    button.addEventListener('click', function() {
-        showMainContainer();
+    // Evento para el botón de volver al inicio en toda la página
+    document.querySelectorAll('.btn-volver').forEach(button => {
+        button.addEventListener('click', function () {
+            showMainContainer();
+        })
     })
-})
 
 });
